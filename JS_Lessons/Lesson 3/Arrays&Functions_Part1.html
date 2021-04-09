@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var numbers = [];
+
+	for (var i = 0; i < 5; i++){
+		var randomNumber = parseInt(Math.random() * 100);
+		numbers.push(randomNumber);
+	}
+
+alert("Запомните числа и их порядок: " + numbers);
+
+var userAnswer = +prompt("Какое было первое число?");
+
+	if(userAnswer == numbers[0]){
+		alert("Верно");
+	} else{
+		alert("Неверно. Правильный ответ: " + numbers[0]);
+		}
+
+userAnswer = +prompt("А последнее?");
+
+	if(userAnswer == numbers[numbers.length - 1]){
+		alert("Верно");
+	} else {
+		alert("Неверно. Правильный ответ: " + numbers[numbers.length - 1]);
+		}
+
+var n = parseInt(Math.random() * numbers.length);
+
+userAnswer = +prompt("Каким было число под номером " + (n + 1) + "?");
+
+	if(userAnswer == numbers[n]){
+		alert("Верно");
+	} else {
+		alert("Неверно. Правильный ответ: " + numbers[n]);
+		}
+
+</script>

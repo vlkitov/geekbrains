@@ -1,0 +1,17 @@
+.header{
+    border-width: 1px;
+    border-color: rgb(212, 212, 212);
+    border-style: solid;
+    background-color: rgb(232, 232, 232); 
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div a{
+    color: black;
+    font-size: 16px;
+    padding-right: 24px;
+    line-height: 24px;
+}
